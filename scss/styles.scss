@@ -1,38 +1,35 @@
-$container-max-width:1280px;
-$container-min-width:375px;
-$very-dark-blue:#090B1A;
-$Dark-desaturated-blue:#1B1938;
-$Soft-violet:#AA5BDB;
-$white:#ffffff;
-$font-inter:'Inter', sans-serif;
-$font-lexa-deca:'Lexend Deca', sans-serif;
-$float-left:left;
-$border-radius:10px;
-$columns-width:50%/*50%*/;
-$columns-width-mobile:100%;
-$columns-left-padding:7% 7% 0 7%;
-$columns-left-width:36%/*50%*/;
-$columns-left-width-mobile:86%/*100%*/;
-$display-block:block;
-$display-none:none;
-$h1-font-size:40px;
-$paragraph-color:#6f6c87;
-$list-style:none;
-$li-width:33%;
-$uppercase:uppercase;
-$inherit:inherit;
-$text-center:center;
+
+$dark-cyan:hsl(185, 75%, 39%);
+$very-dark-desaturated-blue:hsl(229, 23%, 23%);
+$dark-grayish-blue:hsl(227, 10%, 46%);
+$Dark-gray:hsl(0, 0%, 59%);
+$font-family: 'Kumbh Sans', sans-serif;
+$position-absolute:absolute;
+    
+
+
 
 body, html {
-    height:100%;
+    background:$dark-cyan;
 }
 .container {
-    max-width:$container-max-width;
-    min-width:$container-min-width;
     margin:0 auto;
     display: flex;
     align-items: center;
-    height: 100%;
+}
+.background-balls {
+    position:relative;
+    & .top-ball {
+        position:$position-absolute;
+        left:0;
+        top:0;
+    }
+    & .bottom-ball {
+        position:$position-absolute;
+        right:0;
+        bottom:0;
+    }
+    
 }
 
 
@@ -42,4 +39,8 @@ body, html {
 /*****Mediaqueries******/
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+    body, html {
+    height:100%;
+  }
+}
     

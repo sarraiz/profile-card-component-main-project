@@ -1,0 +1,34 @@
+body, html {
+  background: #19a2ae;
+}
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background-balls {
+  position: relative;
+}
+.background-balls .top-ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.background-balls .bottom-ball {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*****Mediaqueries******/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  body, html {
+    height: 100%;
+  }
+}
