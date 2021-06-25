@@ -22,17 +22,24 @@ body, html {
 .background-balls {
     height:$total-height;
     position:absolute;
-    overflow:hidden;
     width:100%;
     & .top-ball {
         position:fixed;
-        left:-30%;
+        left:-55%;
         top:-50%;
+        width:100%;
+        & img {
+          width:100%;  
+        }
     }
     & .bottom-ball {
         position:fixed;
-        right:-30%;
+        right:-55%;
         bottom:-50%;
+        width:100%;
+        & img {
+            width:100%;
+        }
     }
     
 }
